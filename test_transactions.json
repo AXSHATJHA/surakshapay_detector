@@ -1,0 +1,41 @@
+[
+    {
+        "transaction_amount": 500.75,
+        "transaction_date": "2025-03-01 14:23:00",
+        "transaction_channel": "Online",
+        "payer_email_anonymous": "ANON_123",
+        "payee_ip_anonymous": "ANON_456",
+        "transaction_id_anonymous": "ANON_789",
+        "payee_id_anonymous": "ANON_101"
+    },
+    {
+        "transaction_amount": 1200.00,
+        "transaction_date": "2025-03-02 08:15:30",
+        "transaction_channel": "Mobile",
+        "payer_email_anonymous": "ANON_234",
+        "payee_ip_anonymous": "ANON_567",
+        "transaction_id_anonymous": "ANON_890",
+        "payee_id_anonymous": "ANON_202"
+    },
+    {
+        "transaction_amount": 75.50,
+        "transaction_date": "2025-03-03 20:45:10",
+        "transaction_channel": "ATM",
+        "payer_email_anonymous": "ANON_345",
+        "payee_ip_anonymous": "ANON_678",
+        "transaction_id_anonymous": "ANON_901",
+        "payee_id_anonymous": "ANON_303"
+    },
+    
+    {
+        "transaction_amount": 1.00,
+        "transaction_date": "2025-03-15 12:34:56",
+        "transaction_channel": "mobile",
+        "transaction_payment_mode_anonymous": "2",
+        "payment_gateway_bank_anonymous": "6",
+        "payer_browser_anonymous": "2721",
+        "payer_email_anonymous": "2bc0b46d707436c5a75386b5e43538aea70eb7192f0c4677d89d6d372b0ab84c",
+        "payee_ip_anonymous": "7273713fb5d4f010d68e1ff0443134eb215070a47b93d5895e327c3347310cc4"
+    }
+    
+]

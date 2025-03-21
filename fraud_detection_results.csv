@@ -1,0 +1,5 @@
+transaction_amount,amount_log,amount_diff,txn_count_1h,recent_txn_density,payment_risk,unique_payees_per_payer,payer_payee_combinations,iso_anomaly,lof_anomaly,is_night,hour,minute,fraud_prediction
+500.75,0,0,0,0,0,0,0,0,0,0,0,0,0
+1200.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75.5,0,0,0,0,0,0,0,0,0,0,0,0,0
+1.0,0,0,0,0,0,0,0,0,0,0,0,0,1
