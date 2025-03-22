@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import pandas as pd
 import numpy as np
 import joblib
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 # Load the trained model
 model = joblib.load("fraud_detection (1).pkl")
@@ -15,10 +15,9 @@ class Transaction(BaseModel):
     transaction_date: str
     transaction_channel: str
     payer_email_anonymous: str
-    payee_ip_anonymous: str
+    payee_ip_anonymous: Optional[str] = None  # Make this field optional
     transaction_id_anonymous: str
     payee_id_anonymous: str
-    # Add other fields as needed
 
 class TransactionBatch(BaseModel):
     transactions: List[Transaction]
