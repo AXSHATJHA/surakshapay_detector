@@ -1,5 +1,6 @@
 # app.py
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import pandas as pd
 import numpy as np
@@ -24,6 +25,14 @@ class TransactionBatch(BaseModel):
 
 # Initialize FastAPI app
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins. Change this to ["http://localhost:5173"] for security.
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allows all headers
+)
 
 @app.post("/predict", response_model=List[Dict[str, Any]])
 async def predict_fraud(batch: TransactionBatch):
