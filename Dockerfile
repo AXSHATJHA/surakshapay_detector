@@ -22,4 +22,4 @@ COPY . .
 EXPOSE 80
 
 # Run the API
-CMD ["uvicorn", "surakshapay_test:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "testing:app", "--host", "0.0.0.0", "--port", "80"]
