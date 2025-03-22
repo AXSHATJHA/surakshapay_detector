@@ -1,4 +1,3 @@
-# app.py
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import pandas as pd
@@ -59,7 +58,7 @@ async def predict_fraud(batch: TransactionBatch):
         trained_feature_names = model.booster_.feature_name()
         for feature in trained_feature_names:
             if feature not in df_test.columns:
-                df_test[feature] = 0
+                df_test[feature] = 0  # Assign default value 0 for missing features
         df_test = df_test[trained_feature_names]
 
         # Predict fraud labels (0 or 1)
