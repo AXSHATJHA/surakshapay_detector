@@ -9,15 +9,16 @@ from typing import List, Dict, Any
 model = joblib.load("fraud_detection.pkl")
 
 # Define the input schema for the API
+from typing import Optional
+
 class Transaction(BaseModel):
     transaction_amount: float
     transaction_date: str
     transaction_channel: str
     payer_email_anonymous: str
-    payee_ip_anonymous: str
+    payee_ip_anonymous: Optional[str] = None  # Make this field optional
     transaction_id_anonymous: str
     payee_id_anonymous: str
-    # Add other fields as needed
 
 class TransactionBatch(BaseModel):
     transactions: List[Transaction]
