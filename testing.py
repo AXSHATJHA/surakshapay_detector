@@ -7,7 +7,7 @@ import joblib
 from typing import List, Dict, Any, Optional
 
 # Load the trained model
-model = joblib.load("fraud_detection (1).pkl")
+model = joblib.load("fraud_detection (2).pkl")
 
 # Define the input schema for the API
 class Transaction(BaseModel):
